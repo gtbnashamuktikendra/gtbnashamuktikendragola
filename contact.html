@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homepage | Guru Teg Bahadur Educational Society</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Top strip for Date & Time centered above heading */
+        .top-date-bar {
+            width: 100%;
+            padding: 8px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center; /* Centered layout */
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            box-sizing: border-box;
+        }
+
+        /* Full format data adjustments */
+        .datebox-full {
+            color: var(--text-brilliant-gold);
+            font-weight: 700;
+            font-size: 13.5px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 52px;
+            height: 52px;
+            border: 1px solid var(--line-purple);
+            border-radius: 50%;
+            background: var(--purple-card);
+            color: var(--accent-glow);
+            font-size: 22px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-glow);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all .3s ease;
+            z-index: 9999;
+        }
+        #scrollTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <!-- FULL DATE AND CALENDAR CENTERED AT THE VERY TOP -->
+        <div class="top-date-bar">
+            <span class="datebox-full" id="datetime"></span>
+        </div>
+
+        <div class="brand-row">
+            <div class="brand">
+                <div class="logo-mark" onclick="window.location.href='index.html'">
+               <img src="assets/images/logo.png" alt="Logo">
+               </div>
+                <div class="brand-name">
+                    <b>
+                        <span class="accent">GURU TEG BAHADUR</span> EDUCATIONAL SOCIETY<br>
+                        <span class="accent">गुरु तेग बहादुर</span> एजुकेशनल सोसायटी
+                    </b>
+                    <small>
+                        (CSO Registered Under Society Registration Act 1860, PAN, 12A & 80G)<br>
+                        Regd. Address: Powayan Road, Banda, Shahjahanpur, Uttar Pradesh - 242042
+                    </small>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰ Menu</button>
+
+            <div class="right-title">
+                <b>Nasha Mukti Kendra | नशा मुक्ति केंद्र</b>
+                <small>
+                    📞 +91-7355159310 | 📭 gtbeducationalsociety@gmail.com <br>
+                    📍 475, Ground and 1st Floor Building, Near Global Inter<br>College, New ByPass Road, Gola, Uttar Pradesh - 262802
+                </small>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Programs & Achievements</a>
+            <a href="team.html">Our Teams</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="resources.html">Resources</a>
+            <a href="cctv.html">CCTV</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+<section class="page-head" style="background: linear-gradient(90deg, rgba(28,20,53,0.95), rgba(15,10,28,0.7)); text-align: center; padding: 60px 6%;">
+    <h1>CONTACT US | हमसे संपर्क करें</h1>
+    <p style="color: var(--accent-glow); font-weight:700;">
+        Home › Contact Us
+    </p>
+</section>
+
+<section class="section">
+
+    <div class="two-col">
+
+        <div>
+
+            <h2 class="title">
+                Admission & Recovery Support
+            </h2>
+
+            <p class="lead">
+                If you or your loved one is struggling with alcohol, drug or substance addiction, our team is ready to provide guidance, counselling and rehabilitation support.
+                <br><br>
+
+                यदि आप या आपका कोई प्रियजन नशे की समस्या से जूझ रहा है, तो हमारी टीम आपको परामर्श, मार्गदर्शन और पुनर्वास सहायता प्रदान करने के लिए तैयार है।
+            </p>
+
+            <div class="info-line" style="display:flex; gap:15px; margin-top:30px;">
+
+                <div class="icon" style="margin:0;">📍</div>
+
+                <div>
+
+                    <b style="color:var(--accent-glow); font-size:18px;">
+                        Centre Location | केंद्र का पता
+                    </b>
+
+                    <br><br>
+
+                    475, Ground and 1st Floor Building,
+                    Near Global Inter College,
+                    New ByPass Road, Gola,
+                    Uttar Pradesh, India - 262802
+
+                    <div class="map-box"
+                        style="margin-top:20px;border-radius:15px;overflow:hidden;border:1px solid var(--line-purple);">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9956.45432740468!2d80.45035893773013!3d28.081327501276274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s475%2C%20Ground%20and%201st%20Floor%20Building%2C%20Near%20Global%20Inter%20College%2C%20New%20ByPass%20Road%2C%20Gola%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1781108403912!5m2!1sen!2sin"
+                            width="100%"
+                            height="220"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br>
+
+        </div>
+
+        <div class="card contact-box">
+
+            <h2 class="title-orange"
+                style="font-size:24px;margin-bottom:20px;">
+
+                Admission Enquiry Form |
+                प्रवेश संबंधी जानकारी
+
+            </h2>
+
+            <form action="https://formsubmit.co/gtbeducationalsociety@gmail.com"
+                method="POST">
+
+                <input type="text"
+                    name="name"
+                    placeholder="Your Name | आपका नाम"
+                    required>
+
+                <input type="tel"
+                    name="mobile"
+                    placeholder="Mobile Number | मोबाइल नंबर"
+                    required>
+
+                <input type="email"
+                    name="email"
+                    placeholder="Email Address | ई-मेल पता">
+
+                <select name="reason"
+                    required
+                    style="width:100%;padding:16px;border-radius:10px;margin-bottom:12px;font:inherit;">
+
+                    <option value="">
+                        Purpose of Contact | संपर्क का उद्देश्य
+                    </option>
+
+                    <option>
+                        Nasha Mukti Admission Enquiry
+                    </option>
+
+                    <option>
+                        Counselling Support
+                    </option>
+
+                    <option>
+                        Family Consultation
+                    </option>
+
+                    <option>
+                        Rehabilitation Information
+                    </option>
+
+                    <option>
+                        Emergency Assistance
+                    </option>
+
+                </select>
+
+                <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Write your message here | यहां अपना संदेश लिखें"
+                    required
+                    style="width:100%;padding:16px;border-radius:10px;margin-bottom:12px;font:inherit;">
+                </textarea>
+
+                <input type="hidden"
+                    name="_subject"
+                    value="New Admission Enquiry - Guru Teg Bahadur Nasha Mukti Kendra">
+
+                <input type="hidden"
+                    name="_captcha"
+                    value="false">
+
+                <input type="hidden"
+                    name="_template"
+                    value="table">
+
+                <button class="btn"
+                    type="submit"
+                    style="width:100%;">
+
+                    Send Enquiry |
+                    जानकारी भेजें
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <section class="section white">
+
+        <h2 class="title">
+            Why Contact Us?
+        </h2>
+
+        <div class="grid grid-4">
+
+            <div class="card feature">
+                <div class="icon">🩺</div>
+                <h3>Professional Guidance</h3>
+                <p>
+                    Expert support for addiction recovery.
+                </p>
+            </div>
+
+            <div class="card feature">
+                <div class="icon">💬</div>
+                <h3>Counselling Assistance</h3>
+                <p>
+                    Confidential counselling and emotional support.
+                </p>
+            </div>
+
+            <div class="card feature">
+                <div class="icon">🤝</div>
+                <h3>Family Support</h3>
+                <p>
+                    Guidance for families throughout recovery.
+                </p>
+            </div>
+
+            <div class="card feature">
+                <div class="icon">🧘</div>
+                <h3>Rehabilitation Programs</h3>
+                <p>
+                    Structured treatment and wellness activities.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="strip" style="margin-top:40px;">
+        Admission Helpline : +91-7355159310
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        Email : gtbeducationalsociety@gmail.com
+    </div>
+
+    <div class="strip"
+        style="background:var(--purple-dark);color:var(--text-muted);">
+
+        "Every call for help is the first step towards recovery."
+        <br>
+        "मदद के लिए उठाया गया हर कदम सुधार की दिशा में पहला कदम है।"
+
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            <b>Social Welfare &amp; Public Support Services :</b><br>
+            🔸Community Development &amp; Empowerment Programs<br>
+            🔸Social Justice &amp; Rehabilitation Support<br>
+            🔸Creating Positive Change Through Compassionate Care<br>
+            🔸Drug De-Addiction &amp; Rehabilitation Services<br>
+        </div>
+        <div class="footer-right">
+            <span class="protection-tag">🔒 Basic Protecction Enabled © 2026</span><br><br>
+            <b>Guru Teg Bahadur Educational Society - </b>Nasha Mukti Kendra, Gola<br>
+            <b>Created & Managed by :</b> IT Development by Tushar Srivastava
+            <a href="https://www.linkedin.com/company/it-development-by-tushar-srivastava-itdts" target="_blank" class="footer-link">(itdts)</a><br>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { scrollTopBtn.classList.add('show'); } 
+            else { scrollTopBtn.classList.remove('show'); }
+        });
+        scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    </script>
+</body>
+</html>

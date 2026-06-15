@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homepage | Guru Teg Bahadur Educational Society</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Top strip for Date & Time centered above heading */
+        .top-date-bar {
+            width: 100%;
+            padding: 8px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center; /* Centered layout */
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            box-sizing: border-box;
+        }
+
+        /* Full format data adjustments */
+        .datebox-full {
+            color: var(--text-brilliant-gold);
+            font-weight: 700;
+            font-size: 13.5px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 52px;
+            height: 52px;
+            border: 1px solid var(--line-purple);
+            border-radius: 50%;
+            background: var(--purple-card);
+            color: var(--accent-glow);
+            font-size: 22px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-glow);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all .3s ease;
+            z-index: 9999;
+        }
+        #scrollTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <!-- FULL DATE AND CALENDAR CENTERED AT THE VERY TOP -->
+        <div class="top-date-bar">
+            <span class="datebox-full" id="datetime"></span>
+        </div>
+
+        <div class="brand-row">
+            <div class="brand">
+                <div class="logo-mark" onclick="window.location.href='index.html'">
+               <img src="assets/images/logo.png" alt="Logo">
+               </div>
+                <div class="brand-name">
+                    <b>
+                        <span class="accent">GURU TEG BAHADUR</span> EDUCATIONAL SOCIETY<br>
+                        <span class="accent">गुरु तेग बहादुर</span> एजुकेशनल सोसायटी
+                    </b>
+                    <small>
+                        (CSO Registered Under Society Registration Act 1860, PAN, 12A & 80G)<br>
+                        Regd. Address: Powayan Road, Banda, Shahjahanpur, Uttar Pradesh - 242042
+                    </small>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰ Menu</button>
+
+            <div class="right-title">
+                <b>Nasha Mukti Kendra | नशा मुक्ति केंद्र</b>
+                <small>
+                    📞 +91-7355159310 | 📭 gtbeducationalsociety@gmail.com <br>
+                    📍 475, Ground and 1st Floor Building, Near Global Inter<br>College, New ByPass Road, Gola, Uttar Pradesh - 262802
+                </small>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Programs & Achievements</a>
+            <a href="team.html">Our Teams</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="resources.html">Resources</a>
+            <a href="cctv.html">CCTV</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+
+<section class="page-head" style="background: linear-gradient(90deg, rgba(28,20,53,0.95), rgba(15,10,28,0.7)); text-align: center; padding: 60px 6%;">
+    <h1 style="color:#fff;font-size:38px;margin:0;">
+        RESOURCES | संसाधन
+    </h1>
+    <p style="color: var(--accent-glow); margin:8px 0 0; font-weight:700;">
+        Home › Resources
+    </p>
+</section>
+
+<section class="section">
+
+    <h2 class="title">
+        Recovery Resources & Awareness Materials
+    </h2>
+
+    <p class="lead">
+        We provide educational resources, awareness materials and guidance documents to help individuals and families 
+        understand addiction, recovery and rehabilitation processes, and to promote a healthy lifestyle free from 
+        substance abuse such as drugs and alcohol through informative articles, practical guides and motivational materials.
+        <br><br>
+        हम नशे की समस्या, पुनर्वास प्रक्रिया तथा स्वस्थ जीवनशैली के बारे में जागरूकता बढ़ाने हेतु शैक्षिक सामग्री, मार्गदर्शन दस्तावेज़ और उपयोगी संसाधन उपलब्ध कराते हैं
+        ताकि व्यक्ति और परिवार नशे से मुक्त जीवन की ओर बढ़ सकें और नशे के दुष्प्रभावों से बच सकें ।
+    </p>
+
+    <div class="grid grid-3">
+
+        <div class="card">
+            <div class="icon">📘</div>
+            <h3>Addiction Awareness Guide</h3>
+            <p>
+                Learn about addiction, warning signs, causes and available treatment options.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👨‍👩‍👧</div>
+            <h3>Family Support Handbook</h3>
+            <p>
+                Practical guidance for families supporting loved ones during recovery.
+            </p>
+
+            <a class="btn" href="assets/documents/resources/guide.pdf" target="_blank">
+                Download PDF
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧘</div>
+            <h3>Healthy Lifestyle Guide</h3>
+            <p>
+                Wellness practices including yoga, meditation and positive routines.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section white">
+
+    <h2 class="title">
+        Recovery Support Materials
+    </h2>
+
+    <div class="grid grid-4">
+
+        <div class="card feature">
+            <div class="icon">💬</div>
+            <h3>Counselling Resources</h3>
+            <p>
+                Information related to emotional wellbeing and mental health recovery.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">📖</div>
+            <h3>Educational Articles</h3>
+            <p>
+                Articles explaining addiction prevention and recovery methods.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">🎯</div>
+            <h3>Motivational Materials</h3>
+            <p>
+                Positive stories and inspiration for long-term recovery.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">🤝</div>
+            <h3>Family Guidance</h3>
+            <p>
+                Resources helping families support successful rehabilitation.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2 class="title">
+        Frequently Asked Questions
+    </h2>
+
+    <div class="timeline">
+
+        <div class="step">
+            <h3>What is a Nasha Mukti Kendra?</h3>
+            <p>
+                A rehabilitation centre that provides professional support and treatment for addiction recovery.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>How long does recovery take?</h3>
+            <p>
+                Recovery duration varies depending on individual needs and treatment plans.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Can family members participate?</h3>
+            <p>
+                Yes, family counselling and support play an important role in recovery.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Are counselling services available?</h3>
+            <p>
+                Yes, individual and group counselling sessions are provided regularly.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="strip">
+        "Knowledge, awareness and support are powerful tools in recovery."
+        <br>
+        "ज्ञान, जागरूकता और सहयोग पुनर्वास की सबसे बड़ी शक्तियाँ हैं।"
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            <b>Social Welfare &amp; Public Support Services :</b><br>
+            🔸Community Development &amp; Empowerment Programs<br>
+            🔸Social Justice &amp; Rehabilitation Support<br>
+            🔸Creating Positive Change Through Compassionate Care<br>
+            🔸Drug De-Addiction &amp; Rehabilitation Services<br>
+        </div>
+        <div class="footer-right">
+            <span class="protection-tag">🔒 Basic Protecction Enabled © 2026</span><br><br>
+            <b>Guru Teg Bahadur Educational Society - </b>Nasha Mukti Kendra, Gola<br>
+            <b>Created & Managed by :</b> IT Development by Tushar Srivastava
+            <a href="https://www.linkedin.com/company/it-development-by-tushar-srivastava-itdts" target="_blank" class="footer-link">(itdts)</a><br>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { scrollTopBtn.classList.add('show'); } 
+            else { scrollTopBtn.classList.remove('show'); }
+        });
+        scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    </script>
+</body>
+</html>

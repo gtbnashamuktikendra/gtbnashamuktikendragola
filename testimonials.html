@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homepage | Guru Teg Bahadur Educational Society</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Top strip for Date & Time centered above heading */
+        .top-date-bar {
+            width: 100%;
+            padding: 8px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center; /* Centered layout */
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            box-sizing: border-box;
+        }
+
+        /* Full format data adjustments */
+        .datebox-full {
+            color: var(--text-brilliant-gold);
+            font-weight: 700;
+            font-size: 13.5px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 52px;
+            height: 52px;
+            border: 1px solid var(--line-purple);
+            border-radius: 50%;
+            background: var(--purple-card);
+            color: var(--accent-glow);
+            font-size: 22px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-glow);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all .3s ease;
+            z-index: 9999;
+        }
+        #scrollTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <!-- FULL DATE AND CALENDAR CENTERED AT THE VERY TOP -->
+        <div class="top-date-bar">
+            <span class="datebox-full" id="datetime"></span>
+        </div>
+
+        <div class="brand-row">
+            <div class="brand">
+                <div class="logo-mark" onclick="window.location.href='index.html'">
+               <img src="assets/images/logo.png" alt="Logo">
+               </div>
+                <div class="brand-name">
+                    <b>
+                        <span class="accent">GURU TEG BAHADUR</span> EDUCATIONAL SOCIETY<br>
+                        <span class="accent">गुरु तेग बहादुर</span> एजुकेशनल सोसायटी
+                    </b>
+                    <small>
+                        (CSO Registered Under Society Registration Act 1860, PAN, 12A & 80G)<br>
+                        Regd. Address: Powayan Road, Banda, Shahjahanpur, Uttar Pradesh - 242042
+                    </small>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰ Menu</button>
+
+            <div class="right-title">
+                <b>Nasha Mukti Kendra | नशा मुक्ति केंद्र</b>
+                <small>
+                    📞 +91-7355159310 | 📭 gtbeducationalsociety@gmail.com <br>
+                    📍 475, Ground and 1st Floor Building, Near Global Inter<br>College, New ByPass Road, Gola, Uttar Pradesh - 262802
+                </small>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Programs & Achievements</a>
+            <a href="team.html">Our Teams</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="resources.html">Resources</a>
+            <a href="cctv.html">CCTV</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+<section class="page-head" style="background: linear-gradient(90deg, rgba(28,20,53,0.95), rgba(15,10,28,0.7)); text-align: center; padding: 60px 6%;">
+    <h1 style="color: #fff; font-size: 38px; margin: 0;">
+        TESTIMONIALS | सफलता की कहानियाँ
+    </h1>
+    <p style="color: var(--accent-glow); margin: 8px 0 0; font-weight: 700;">
+        Home › Testimonials
+    </p>
+</section>
+
+<section class="section">
+
+    <div class="two-col">
+
+        <div>
+            <h2 class="title">Stories of Recovery & New Beginnings</h2>
+
+            <p class="lead">
+                Every recovery journey is unique. These testimonials reflect the courage, determination and positive 
+                transformation experienced by individuals and their families through rehabilitation, counselling and 
+                continuous support at our center to overcome addiction and rebuild their lives with hope and dignity.
+                <br><br>
+                प्रत्येक सुधार की कहानी अलग होती है। ये अनुभव उन लोगों और उनके परिवारों की सकारात्मक यात्रा को दर्शाते हैं जिन्होंने काउंसलिंग,
+                पुनर्वास और निरंतर सहयोग के माध्यम से अपने जीवन में नया बदलाव लाया है और नशे से मुक्त होकर आशा और सम्मान के साथ जीवन को फिर से बनाया है।
+            </p>
+        </div>
+
+        <div class="card" style="padding:15px;">
+            <img src="assets/images/testimonial/testimonial-side.jpg"
+                alt="Recovery Stories"
+                style="width:100%; height:auto; min-height:300px; object-fit:cover; border-radius:15px; display:block;">
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="grid grid-2">
+
+        <div class="card">
+            <div class="quote" style="font-size:40px;color:var(--accent-glow);">“</div>
+
+            <p>
+                नशे की वजह से मेरा जीवन पूरी तरह प्रभावित हो चुका था। गुरु तेग बहादुर नशा मुक्ति केंद्र में मिले सहयोग, अनुशासन और काउंसलिंग ने मुझे नई दिशा दी। आज मैं स्वस्थ हूँ और अपने परिवार के साथ खुशहाल जीवन जी रहा हूँ।
+            </p>
+
+            <div class="testimonial-name"
+                style="color:var(--accent-secondary);font-weight:700;margin-top:10px;">
+                — संतोस कुमार, पूर्व निवासी
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="quote" style="font-size:40px;color:var(--accent-glow);">“</div>
+
+            <p>
+                योग, ध्यान और नियमित परामर्श सत्रों ने मेरे आत्मविश्वास को वापस लौटाया। यहाँ का वातावरण सकारात्मक है और हर व्यक्ति को सम्मान के साथ सुधार का अवसर दिया जाता है।
+            </p>
+
+            <div class="testimonial-name"
+                style="color:var(--accent-secondary);font-weight:700;margin-top:10px;">
+                — जोगेश सिंह, पूर्व निवासी
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="quote" style="font-size:40px;color:var(--accent-glow);">“</div>
+
+            <p>
+                हमारे परिवार ने उम्मीद लगभग खो दी थी, लेकिन केंद्र के सहयोग और फैमिली काउंसलिंग ने हमें समझाया कि सुधार संभव है। आज हमारे परिवार में फिर से खुशियाँ लौट आई हैं।
+            </p>
+
+            <div class="testimonial-name"
+                style="color:var(--accent-secondary);font-weight:700;margin-top:10px;">
+                — अजीत कुमार, परिवार सदस्य
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="quote" style="font-size:40px;color:var(--accent-glow);">“</div>
+
+            <p>
+                मुझे यहाँ केवल उपचार ही नहीं बल्कि जीवन को नए तरीके से जीना भी सीखने को मिला। अब मैं भविष्य को लेकर आशावादी हूँ और समाज में सकारात्मक योगदान देना चाहता हूँ।
+            </p>
+
+            <div class="testimonial-name"
+                style="color:var(--accent-secondary);font-weight:700;margin-top:10px;">
+                — अनूप जैसवाल , पूर्व निवासी
+            </div>
+        </div>
+
+        <div class="card">
+    <div class="quote" style="font-size:40px;color:var(--accent-glow);">“</div>
+
+    <p>
+        यहाँ का सहयोग और मार्गदर्शन मेरे लिए एक नई शुरुआत साबित हुआ। मैंने आत्मविश्वास वापस पाया और अब अपने परिवार के साथ बेहतर जीवन जी रहा हूँ।
+    </p>
+
+    <div class="testimonial-name"
+        style="color:var(--accent-secondary);font-weight:700;margin-top:10px;">
+        — रवि शर्मा, पूर्व निवासी
+    </div>
+</div>
+
+<div class="card">
+    <div class="quote" style="font-size:40px;color:var(--accent-glow);">“</div>
+
+    <p>
+        इस केंद्र ने मुझे अपनी चुनौतियों का सामना करने की शक्ति दी। आज मैं पहले से अधिक सकारात्मक और आत्मनिर्भर महसूस करता हूँ।
+    </p>
+
+    <div class="testimonial-name"
+        style="color:var(--accent-secondary);font-weight:700;margin-top:10px;">
+        — संदीप वर्मा, पूर्व निवासी
+    </div>
+</div>
+
+<div class="card">
+    <div class="quote" style="font-size:40px;color:var(--accent-glow);">“</div>
+
+    <p>
+        यहाँ मिले समर्थन और देखभाल ने मेरी सोच को बदल दिया। अब मैं अपने लक्ष्यों की ओर पूरे उत्साह के साथ आगे बढ़ रहा हूँ।
+    </p>
+
+    <div class="testimonial-name"
+        style="color:var(--accent-secondary);font-weight:700;margin-top:10px;">
+        — मनोज तिवारी, पूर्व निवासी
+    </div>
+</div>
+
+<div class="card">
+    <div class="quote" style="font-size:40px;color:var(--accent-glow);">“</div>
+
+    <p>
+        मुझे यहाँ एक सुरक्षित और प्रेरणादायक वातावरण मिला। इस अनुभव ने मेरे जीवन में स्थायी सकारात्मक बदलाव लाया है।
+    </p>
+
+    <div class="testimonial-name"
+        style="color:var(--accent-secondary);font-weight:700;margin-top:10px;">
+        — अजय सिंह, पूर्व निवासी
+    </div>
+</div>
+
+<div class="card">
+    <div class="quote" style="font-size:40px;color:var(--accent-glow);">“</div>
+
+    <p>
+        मैंने यहाँ केवल सहायता ही नहीं पाई, बल्कि खुद को समझने और आगे बढ़ने का नया दृष्टिकोण भी प्राप्त किया। इसके लिए मैं हमेशा आभारी रहूँगा।
+    </p>
+
+    <div class="testimonial-name"
+        style="color:var(--accent-secondary);font-weight:700;margin-top:10px;">
+        — विकास मिश्रा, पूर्व निवासी
+    </div>
+</div>
+
+<div class="card">
+    <div class="quote" style="font-size:40px;color:var(--accent-glow);">“</div>
+
+    <p>
+        इस स्थान ने मुझे उम्मीद, अनुशासन और आत्मविश्वास दिया। आज मैं अपने जीवन के प्रति अधिक जिम्मेदार और सकारात्मक दृष्टिकोण रखता हूँ।
+    </p>
+
+    <div class="testimonial-name"
+        style="color:var(--accent-secondary);font-weight:700;margin-top:10px;">
+        — दीपक यादव, पूर्व निवासी
+    </div>
+</div>
+
+    </div>
+
+    <br><br>
+
+    <section class="section white">
+
+        <h2 class="title">
+            Why Families Trust Us | परिवार हम पर भरोसा क्यों करते हैं
+        </h2>
+
+        <div class="grid grid-4">
+
+            <div class="card feature">
+                <div class="icon">🤝</div>
+                <h3>Supportive Environment</h3>
+                <p>
+                    Respectful and caring atmosphere for recovery.
+                </p>
+            </div>
+
+            <div class="card feature">
+                <div class="icon">💬</div>
+                <h3>Professional Counselling</h3>
+                <p>
+                    Individual and family counselling support.
+                </p>
+            </div>
+
+            <div class="card feature">
+                <div class="icon">🧘</div>
+                <h3>Holistic Wellness</h3>
+                <p>
+                    Yoga, meditation and positive lifestyle development.
+                </p>
+            </div>
+
+            <div class="card feature">
+                <div class="icon">🌟</div>
+                <h3>Long-Term Recovery</h3>
+                <p>
+                    Focused on sustainable and healthy rehabilitation.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+        <div class="strip">
+            "Recovery is possible when hope, support and determination come together."
+            <br>
+            "जब आशा, सहयोग और दृढ़ संकल्प साथ आते हैं तो सुधार संभव हो जाता है।"
+        </div>
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            <b>Social Welfare &amp; Public Support Services :</b><br>
+            🔸Community Development &amp; Empowerment Programs<br>
+            🔸Social Justice &amp; Rehabilitation Support<br>
+            🔸Creating Positive Change Through Compassionate Care<br>
+            🔸Drug De-Addiction &amp; Rehabilitation Services<br>
+        </div>
+        <div class="footer-right">
+            <span class="protection-tag">🔒 Basic Protecction Enabled © 2026</span><br><br>
+            <b>Guru Teg Bahadur Educational Society - </b>Nasha Mukti Kendra, Gola<br>
+            <b>Created & Managed by :</b> IT Development by Tushar Srivastava
+            <a href="https://www.linkedin.com/company/it-development-by-tushar-srivastava-itdts" target="_blank" class="footer-link">(itdts)</a><br>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { scrollTopBtn.classList.add('show'); } 
+            else { scrollTopBtn.classList.remove('show'); }
+        });
+        scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    </script>
+</body>
+</html>

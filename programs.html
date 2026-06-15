@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homepage | Guru Teg Bahadur Educational Society</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Top strip for Date & Time centered above heading */
+        .top-date-bar {
+            width: 100%;
+            padding: 8px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center; /* Centered layout */
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            box-sizing: border-box;
+        }
+
+        /* Full format data adjustments */
+        .datebox-full {
+            color: var(--text-brilliant-gold);
+            font-weight: 700;
+            font-size: 13.5px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 52px;
+            height: 52px;
+            border: 1px solid var(--line-purple);
+            border-radius: 50%;
+            background: var(--purple-card);
+            color: var(--accent-glow);
+            font-size: 22px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-glow);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all .3s ease;
+            z-index: 9999;
+        }
+        #scrollTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+
+<style>
+.achievement-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:30px}
+.achievement-box{background:linear-gradient(135deg,rgba(98,0,255,.15),rgba(255,215,0,.08));border:1px solid rgba(255,255,255,.12);padding:18px;border-radius:14px;text-align:center;font-weight:700;box-shadow:0 8px 20px rgba(0,0,0,.15);transition:.3s}
+.achievement-box:hover{transform:translateY(-4px)}
+</style>
+
+</head>
+
+<body>
+
+    <header class="topbar">
+        <!-- FULL DATE AND CALENDAR CENTERED AT THE VERY TOP -->
+        <div class="top-date-bar">
+            <span class="datebox-full" id="datetime"></span>
+        </div>
+
+        <div class="brand-row">
+            <div class="brand">
+                <div class="logo-mark" onclick="window.location.href='index.html'">
+               <img src="assets/images/logo.png" alt="Logo">
+               </div>
+                <div class="brand-name">
+                    <b>
+                        <span class="accent">GURU TEG BAHADUR</span> EDUCATIONAL SOCIETY<br>
+                        <span class="accent">गुरु तेग बहादुर</span> एजुकेशनल सोसायटी
+                    </b>
+                    <small>
+                        (CSO Registered Under Society Registration Act 1860, PAN, 12A & 80G)<br>
+                        Regd. Address: Powayan Road, Banda, Shahjahanpur, Uttar Pradesh - 242042
+                    </small>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰ Menu</button>
+
+            <div class="right-title">
+                <b>Nasha Mukti Kendra | नशा मुक्ति केंद्र</b>
+                <small>
+                    📞 +91-7355159310 | 📭 gtbeducationalsociety@gmail.com <br>
+                    📍 475, Ground and 1st Floor Building, Near Global Inter<br>College, New ByPass Road, Gola, Uttar Pradesh - 262802
+                </small>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Programs & Achievements</a>
+            <a href="team.html">Our Teams</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="resources.html">Resources</a>
+            <a href="cctv.html">CCTV</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+<section class="page-head" style="background: linear-gradient(90deg, rgba(28,20,53,0.95), rgba(15,10,28,0.7)); text-align: center; padding: 60px 6%;">
+    <h1 style="color:#fff;font-size:38px;margin:0;">PROGRAMS & RECOVERY SERVICES | कार्यक्रम एवं पुनर्वास सेवाएँ</h1>
+    <p style="color: var(--accent-glow); margin: 8px 0 0; font-weight: 700;">
+        Home › Programs & Recovery Services
+    </p>
+</section>
+
+<section class="section">
+
+    <div style="text-align:center;max-width:1000px;margin:auto;">
+        <h2 class="title">Comprehensive Rehabilitation Programs</h2>
+        <p class="lead">
+            Our rehabilitation programs are designed to help individuals overcome addiction through professional treatment, counselling, wellness activities and continuous emotional support.
+            <br><br>
+            हमारे पुनर्वास कार्यक्रम नशे से प्रभावित व्यक्तियों को चिकित्सा सहायता, काउंसलिंग, योग, ध्यान तथा सामाजिक सहयोग के माध्यम से स्वस्थ जीवन की ओर वापस लाने के लिए तैयार किए गए हैं।
+        </p>
+    </div>
+
+    <div class="grid grid-4">
+
+        <div class="card feature">
+            <div class="icon">🩺</div>
+            <h3>Detoxification Support</h3>
+            <p>
+                Safe and supervised detox process with medical monitoring and professional care.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">💬</div>
+            <h3>Individual Counselling</h3>
+            <p>
+                One-to-one counselling sessions focused on emotional healing and behavioral improvement.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">👥</div>
+            <h3>Group Therapy</h3>
+            <p>
+                Interactive sessions encouraging motivation, communication and peer support.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">🧘</div>
+            <h3>Yoga & Meditation</h3>
+            <p>
+                Daily yoga and meditation sessions to improve mental health and self-control.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section white">
+
+    <h2 class="title">Our Recovery Process | हमारी सुधार प्रक्रिया</h2>
+
+    <div class="timeline">
+
+        <div class="step">
+            <h3>Step 1 : Assessment & Admission</h3>
+            <p>
+                Initial evaluation of physical, mental and emotional condition to prepare an appropriate recovery plan.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Step 2 : Detoxification & Medical Care</h3>
+            <p>
+                Medical supervision and health monitoring to safely manage withdrawal symptoms.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Step 3 : Counselling & Therapy</h3>
+            <p>
+                Individual and group counselling sessions aimed at long-term behavioral transformation.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Step 4 : Rehabilitation & Lifestyle Development</h3>
+            <p>
+                Yoga, meditation, discipline, skill development and healthy routine building.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Step 5 : Family Support & Reintegration</h3>
+            <p>
+                Family counselling and guidance for successful reintegration into society.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2 class="title">Additional Services | अतिरिक्त सेवाएँ</h2>
+
+    <div class="grid grid-3">
+
+        <div class="card">
+            <h3>Family Counselling</h3>
+            <p>
+                Helping family members understand addiction and support recovery effectively.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Relapse Prevention</h3>
+            <p>
+                Strategies and guidance to prevent relapse and maintain long-term sobriety.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Motivational Sessions</h3>
+            <p>
+                Regular motivational activities to strengthen confidence and commitment.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="strip">
+        “Every recovery journey begins with a single decision to change.”<br>
+        "हर सुधार की शुरुआत बदलाव के एक निर्णय से होती है।"
+    </div>
+
+</section>
+
+    
+<section class="section white">
+<h2 class="title">Our Milestones & Achievements | हमारी उपलब्धियाँ</h2>
+<p class="lead" style="text-align:center;max-width:900px;margin:0 auto 20px;">
+Awareness, rehabilitation support and community service remain our core achievements.
+</p>
+<div class="achievement-grid">
+<div class="achievement-box">🔹 3500+ Recovery Support Cases</div>
+<div class="achievement-box">🔹 1000+ Families Assisted</div>
+<div class="achievement-box">🔹 20+ Awareness Programs</div>
+<div class="achievement-box">🔹 10+ Awards & Recognition</div>
+<div class="achievement-box">🔹 95% Recovery Success Support</div>
+<div class="achievement-box">🔹 200+ Active Volunteers</div>
+<div class="achievement-box">🔹 50+ Community Partners</div>
+<div class="achievement-box">🔹 5+ Years of Service Experience</div>
+<div class="achievement-box">🔹 24×7 Support & Guidance</div>
+<div class="achievement-box">🔹 100% Confidential Care</div>
+</div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            <b>Social Welfare &amp; Public Support Services :</b><br>
+            🔸Community Development &amp; Empowerment Programs<br>
+            🔸Social Justice &amp; Rehabilitation Support<br>
+            🔸Creating Positive Change Through Compassionate Care<br>
+            🔸Drug De-Addiction &amp; Rehabilitation Services<br>
+        </div>
+        <div class="footer-right">
+            <span class="protection-tag">🔒 Basic Protecction Enabled © 2026</span><br><br>
+            <b>Guru Teg Bahadur Educational Society - </b>Nasha Mukti Kendra, Gola<br>
+            <b>Created & Managed by :</b> IT Development by Tushar Srivastava
+            <a href="https://www.linkedin.com/company/it-development-by-tushar-srivastava-itdts" target="_blank" class="footer-link">(itdts)</a><br>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { scrollTopBtn.classList.add('show'); } 
+            else { scrollTopBtn.classList.remove('show'); }
+        });
+        scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homepage | Guru Teg Bahadur Educational Society</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Top strip for Date & Time centered above heading */
+        .top-date-bar {
+            width: 100%;
+            padding: 8px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center; /* Centered layout */
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            box-sizing: border-box;
+        }
+
+        /* Full format data adjustments */
+        .datebox-full {
+            color: var(--text-brilliant-gold);
+            font-weight: 700;
+            font-size: 13.5px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 52px;
+            height: 52px;
+            border: 1px solid var(--line-purple);
+            border-radius: 50%;
+            background: var(--purple-card);
+            color: var(--accent-glow);
+            font-size: 22px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-glow);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all .3s ease;
+            z-index: 9999;
+        }
+        #scrollTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <!-- FULL DATE AND CALENDAR CENTERED AT THE VERY TOP -->
+        <div class="top-date-bar">
+            <span class="datebox-full" id="datetime"></span>
+        </div>
+
+        <div class="brand-row">
+            <div class="brand">
+                <div class="logo-mark" onclick="openLogoPopup()">
+                <img src="assets/images/logo.png" alt="Logo">
+                </div>
+                <div class="brand-name">
+                    <b>
+                        <span class="accent">GURU TEG BAHADUR</span> EDUCATIONAL SOCIETY<br>
+                        <span class="accent">गुरु तेग बहादुर</span> एजुकेशनल सोसायटी
+                    </b>
+                    <small>
+                        (CSO Registered Under Society Registration Act 1860, PAN, 12A & 80G)<br>
+                        Regd. Address: Powayan Road, Banda, Shahjahanpur, Uttar Pradesh - 242042
+                    </small>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰ Menu</button>
+
+            <div class="right-title">
+                <b>Nasha Mukti Kendra | नशा मुक्ति केंद्र</b>
+                <small>
+                    📞 +91-7355159310 | 📭 gtbeducationalsociety@gmail.com <br>
+                    📍 475, Ground and 1st Floor Building, Near Global Inter<br>College, New ByPass Road, Gola, Uttar Pradesh - 262802
+                </small>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Programs & Achievements</a>
+            <a href="team.html">Our Teams</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="resources.html">Resources</a>
+            <a href="cctv.html">CCTV</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION - NASHA MUKTI FOCUS -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="typing-text"></h1>
+            <h2>
+            🔹 व्यसन से मुक्ति पाएँ 🔹 पूर्ण स्वास्थ्य लाभ  <br>🔹 नया व उज्ज्वल भविष्य 🔹 सम्मानजनक जीवन का पुनर्निर्माण
+            </h2>
+            <p>
+                Guru Teg Bahadur Educational Society (Rehabilitation Center) supports comprehensive addiction recovery through medical guidance, professional counseling, wellness programs, and dedicated family support, helping individuals break free from dependency.
+                <br><br>
+                गुरु तेग बहादुर एजुकेशनल सोसायटी (पुनर्वास केंद्र) - चिकित्सा परामर्श, काउंसलिंग, स्वास्थ्य सेवाओं और पारिवारिक सहयोग के माध्यम से हर प्रकार के नशे से मुक्ति दिलाने और एक स्वस्थ व मर्यादित जीवन की शुरुआत करने में पूरी सहायता करता है।
+            </p>
+            <div class="hero-btns">
+                <a class="btn" href="contact.html">Get Help Now</a>
+                <a class="btn dark" href="programs.html">View Programs</a>
+            </div>
+        </div>
+
+        <div class="hero-slideshow">
+            <img src="assets/images/homeslideshow/homeslideshow-image1.jpg" class="slide active" alt="Image 1">
+            <img src="assets/images/homeslideshow/homeslideshow-image2.jpg" class="slide" alt="Image 2">
+            <img src="assets/images/homeslideshow/homeslideshow-image3.jpg" class="slide" alt="Image 3">
+            <img src="assets/images/homeslideshow/homeslideshow-image4.jpg" class="slide" alt="Image 4">
+            <img src="assets/images/homeslideshow/homeslideshow-image5.jpg" class="slide" alt="Image 5">
+        </div>
+    </section>
+
+    <!-- CORE FEATURES -->
+    <section class="section">
+        <div class="grid grid-4">
+            <div class="card feature">
+                <div class="icon">❤️</div>
+                <h3>Compassionate Care
+                    <br> करुणापूर्ण देखभाल
+                </h3>
+                <p>Respectful, completely non-judgmental support for patients and their families throughout the journey and beyond.</p>
+            </div>
+            <div class="card feature">
+                <div class="icon">🏠</div>
+                <h3>Safe & Secure
+                    <br> सकुशल व सुरक्षित
+                </h3>
+                <p>A peaceful, hygienic, structured, and strictly monitored environment optimized for clinical recovery and holistic wellness.</p>
+            </div>
+            <div class="card feature">
+                <div class="icon">🧭</div>
+                <h3>Guided Recovery
+                    <br> निर्देशित पुनर्प्राप्ति
+                </h3>
+                <p>Strategic counseling, dynamic physical activities, routine tracking, and relapse-prevention blueprints optimized for long-term recovery.</p>
+            </div>
+            <div class="card feature">
+                <div class="icon">🌱</div>
+                <h3>Better Tomorrow
+                    <br> उज्ज्वल कल
+                </h3>
+                <p>Assisting individuals to rediscover self-worth, repair broken relationships, and rebuild healthy habits and a positive future.</p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat"><b>24×7</b> Support & Care</div>
+            <div class="stat"><b>100%</b> Confidential Process</div>
+            <div class="stat"><b>Holistic</b> Mental Wellness</div>
+            <div class="stat"><b>Family</b> Guidance Program</div>
+        </div>
+
+        <div class="strip">
+            “Quit addiction, secure your family’s happiness – we are with you at every step.”<br>
+            "नशा छोड़ो, खुशियाँ जोड़ो - एक नई और स्वस्थ शुरुआत के लिए हम आपके साथ हैं।"
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section white">
+        <div class="two-col">
+            <div>
+                <h2 class="title">Why Choose <span class="title-orange">Our Center?</span></h2>
+                <p class="lead">
+                    Severe dependency impacts physical health, emotional stability, family relations, career, and personal dignity. Our comprehensive methodology does not simply stop substance dependency; we focus heavily on psychological healing, permanent habit alignment, family resolution, and lifelong wellness.
+                    <br><br>
+                    नशा केवल स्वास्थ्य को ही नहीं, बल्कि मान-सम्मान, परिवार, आजीविका और मानसिक शांति को भी नष्ट कर देता है। हमारा उद्देश्य केवल व्यसन छुड़ाना नहीं है; बल्कि हम आंतरिक सुधार, दिनचर्या में बदलाव, पारिवारिक मार्गदर्शन और व्यावहारिक जीवन में सुधार पर काम करते हैं।
+                </p>
+                <ul class="list">
+                    <li>
+                        Tailored recovery planning adjusted dynamically to individual client history.
+                        <br><small>प्रत्येक व्यक्ति की स्थिति और आवश्यकता के अनुसार व्यक्तिगत उपचार और थेरेपी योजना।</small>
+                    </li>
+                    <li>
+                        Specialized counseling for stress management, anxiety relief, and behavioral correction.
+                        <br><small>तनाव, अवसाद, क्रोध और मानसिक उत्तेजनाओं को नियंत्रित करने के लिए विशेष काउंसलिंग।</small>
+                    </li>
+                    <li>
+                        Yoga practice, physical fitness sessions, meditation, and highly structured lifestyle tracks.
+                        <br><small>शारीरिक व मानसिक मजबूती के लिए नियमित योग, ध्यान और अनुशासित जीवनशैली।</small>
+                    </li>
+                    <li>
+                        Absolute privacy-focused setup guaranteeing confidentiality and self-respect at all stages.
+                        <br><small>पूरी प्रक्रिया के दौरान मरीज के सम्मान और गोपनीयता की शत-प्रतिशत सुरक्षा।</small>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="poster">
+                <div class="poster-logo">
+                    <img src="assets/images/logo.png" alt="Society Logo">
+                </div>
+                <h2>GURU TEG BAHADUR<br>EDUCATIONAL SOCIETY</h2>
+                <h3>Nasha Mukti Kendra, Gola</h3>
+                <div class="badge-row">
+                    <span class="badge">Treatment | उपचार</span>
+                    <span class="badge">Wellness | स्वास्थ्य</span>
+                    <span class="badge">Support | सहयोग</span>
+                    <span class="badge">New Life | नया जीवन</span>
+                    <span class="badge">Healing | उपचार</span>
+                    <span class="badge">Transformation | परिवर्तन</span>
+                    <span class="badge">Empowerment | सशक्तिकरण</span>
+                    <span class="badge">Community | समुदाय</span>
+                    <span class="badge">Recovery | पुनर्प्राप्ति</span>
+                    <span class="badge">Family | परिवार</span>
+                    <span class="badge">Hope | आशा</span>
+                </div>
+                <br>
+                <div class="poster-buttons">
+                    <a class="btn" href="assets/images/home-banner/gtbes-banner.jpg" target="_blank">
+                        Download Banner
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="logo-popup" id="logoPopup">
+        <span class="close-popup" onclick="closeLogoPopup()">✕</span>
+        <img src="assets/images/logo.png" alt="Expanded Logo">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            <b>Social Welfare &amp; Public Support Services :</b><br>
+            🔸Community Development &amp; Empowerment Programs<br>
+            🔸Social Justice &amp; Rehabilitation Support<br>
+            🔸Creating Positive Change Through Compassionate Care<br>
+            🔸Drug De-Addiction &amp; Rehabilitation Services<br>
+        </div>
+        <div class="footer-right">
+            <span class="protection-tag">🔒 Basic Protecction Enabled © 2026</span><br><br>
+            <b>Guru Teg Bahadur Educational Society - </b>Nasha Mukti Kendra, Gola<br>
+            <b>Created & Managed by :</b> IT Development by Tushar Srivastava
+            <a href="https://www.linkedin.com/company/it-development-by-tushar-srivastava-itdts" target="_blank" class="footer-link">(itdts)</a><br>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { scrollTopBtn.classList.add('show'); } 
+            else { scrollTopBtn.classList.remove('show'); }
+        });
+        scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    </script>
+</body>
+</html>

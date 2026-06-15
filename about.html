@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homepage | Guru Teg Bahadur Educational Society</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Top strip for Date & Time centered above heading */
+        .top-date-bar {
+            width: 100%;
+            padding: 8px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center; /* Centered layout */
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            box-sizing: border-box;
+        }
+
+        /* Full format data adjustments */
+        .datebox-full {
+            color: var(--text-brilliant-gold);
+            font-weight: 700;
+            font-size: 13.5px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 52px;
+            height: 52px;
+            border: 1px solid var(--line-purple);
+            border-radius: 50%;
+            background: var(--purple-card);
+            color: var(--accent-glow);
+            font-size: 22px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-glow);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all .3s ease;
+            z-index: 9999;
+        }
+        #scrollTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <!-- FULL DATE AND CALENDAR CENTERED AT THE VERY TOP -->
+        <div class="top-date-bar">
+            <span class="datebox-full" id="datetime"></span>
+        </div>
+
+        <div class="brand-row">
+            <div class="brand">
+               <div class="logo-mark" onclick="window.location.href='index.html'">
+               <img src="assets/images/logo.png" alt="Logo">
+               </div>
+                <div class="brand-name">
+                    <b>
+                        <span class="accent">GURU TEG BAHADUR</span> EDUCATIONAL SOCIETY<br>
+                        <span class="accent">गुरु तेग बहादुर</span> एजुकेशनल सोसायटी
+                    </b>
+                    <small>
+                        (CSO Registered Under Society Registration Act 1860, PAN, 12A & 80G)<br>
+                        Regd. Address: Powayan Road, Banda, Shahjahanpur, Uttar Pradesh - 242042
+                    </small>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰ Menu</button>
+
+            <div class="right-title">
+                <b>Nasha Mukti Kendra | नशा मुक्ति केंद्र</b>
+                <small>
+                    📞 +91-7355159310 | 📭 gtbeducationalsociety@gmail.com <br>
+                    📍 475, Ground and 1st Floor Building, Near Global Inter<br>College, New ByPass Road, Gola, Uttar Pradesh - 262802
+                </small>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Programs & Achievements</a>
+            <a href="team.html">Our Teams</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="resources.html">Resources</a>
+            <a href="cctv.html">CCTV</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+ <section class="section">
+    <div class="two-col">
+
+        <div>
+            <h2 class="title">About <span class="title-orange">Guru Teg Bahadur Educational Society - Nasha Mukti Kendra, Gola</span></h2>
+
+            <p class="lead">
+                Guru Teg Bahadur Nasha Mukti Kendra is dedicated to helping individuals overcome addiction and rebuild a healthy, productive and meaningful life. We provide professional counselling, medical support, yoga, meditation and rehabilitation services in a safe and supportive environment.<br><br>
+
+                गुरु तेग बहादुर नशा मुक्ति केंद्र का उद्देश्य नशे की लत से प्रभावित व्यक्तियों को स्वस्थ, सुरक्षित और सम्मानजनक जीवन की ओर वापस लाना है। हमारा केंद्र चिकित्सा सहायता, काउंसलिंग, योग, ध्यान तथा पुनर्वास सेवाओं के माध्यम से लोगों को नई दिशा प्रदान करता है।
+            </p>
+
+            <div class="timeline">
+
+                <div class="step">
+                    <h3>Our Mission | हमारा उद्देश्य</h3>
+                    <p>
+                        To help individuals achieve freedom from addiction through professional treatment, emotional support and structured rehabilitation while promoting a healthier and addiction-free society.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <h3>Our Vision | हमारी दृष्टि</h3>
+                    <p>
+                        To create a society where every individual lives with confidence, dignity and good health, free from the harmful
+                         effects of addiction and empowered to contribute positively to their families and communities.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <h3>Our Goals | हमारे लक्ष्य</h3>
+                    <p>
+                        To provide comprehensive care and support for individuals struggling with addiction, and to contribute 
+                        to the creation of a drug-free society through awareness, education and rehabilitation.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="photo">
+                <img src="assets/images/aboutus/nashamuktikendra.jpg" alt="Nasha Mukti Kendra">
+                <div class="photo-text">
+                    Recovery • Rehabilitation • Wellness • New Life
+                </div>
+            </div>
+
+            <h2 class="title-orange" style="margin-top:20px;">
+                Our Core Values | हमारे मूल सिद्धांत
+            </h2>
+
+            <ul class="list">
+
+                <li>
+                    Compassionate Care
+                    <small><br>हर व्यक्ति के प्रति संवेदनशील और सम्मानजनक व्यवहार</small>
+                </li>
+
+                <li>
+                    Confidential Support
+                    <small><br>सभी जानकारी और उपचार प्रक्रिया पूर्णतः गोपनीय</small>
+                </li>
+
+                <li>
+                    Family Participation
+                    <small><br>परिवार को सुधार प्रक्रिया में सक्रिय रूप से शामिल करना</small>
+                </li>
+
+                <li>
+                    Long-Term Rehabilitation
+                    <small><br>स्थायी सुधार और पुनर्वास के लिए निरंतर सहयोग</small>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section white">
+
+    <h2 class="title">
+        Why Choose Our Centre | हमारे केंद्र की विशेषताएँ
+    </h2>
+
+    <div class="grid grid-4">
+
+        <div class="card feature">
+            <div class="icon">🩺</div>
+            <h3>Medical Support</h3>
+            <p>
+                Professional medical guidance and regular health monitoring during recovery.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">💬</div>
+            <h3>Expert Counselling</h3>
+            <p>
+                Individual and group counselling sessions helping residents regain confidence.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">🧘</div>
+            <h3>Yoga & Meditation</h3>
+            <p>
+                Daily wellness activities for mental balance, positivity and self-discipline.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">🤝</div>
+            <h3>Family Reintegration</h3>
+            <p>
+                Support and guidance to help individuals reconnect with family and society.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="strip">
+        “Recovery begins with hope, grows with support and succeeds through commitment.”<br>
+        "सुधार की शुरुआत आशा से होती है, सहयोग से बढ़ती है और दृढ़ संकल्प से सफल होती है।"
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            <b>Social Welfare &amp; Public Support Services :</b><br>
+            🔸Community Development &amp; Empowerment Programs<br>
+            🔸Social Justice &amp; Rehabilitation Support<br>
+            🔸Creating Positive Change Through Compassionate Care<br>
+            🔸Drug De-Addiction &amp; Rehabilitation Services<br>
+        </div>
+        <div class="footer-right">
+            <span class="protection-tag">🔒 Basic Protecction Enabled © 2026</span><br><br>
+            <b>Guru Teg Bahadur Educational Society - </b>Nasha Mukti Kendra, Gola<br>
+            <b>Created & Managed by :</b> IT Development by Tushar Srivastava
+            <a href="https://www.linkedin.com/company/it-development-by-tushar-srivastava-itdts" target="_blank" class="footer-link">(itdts)</a><br>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { scrollTopBtn.classList.add('show'); } 
+            else { scrollTopBtn.classList.remove('show'); }
+        });
+        scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    </script>
+</body>
+</html>
